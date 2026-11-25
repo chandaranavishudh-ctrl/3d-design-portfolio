@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Artist & Graphic Designer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="navbar">
+        <div class="logo">PORTFOLIO<span>.</span></div>
+        <nav>
+            <a href="#work">Work</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
+            <a href="#contact" class="btn-nav">Get in Touch</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">3D Artist & Graphic Designer</span>
+            <h1>Crafting Visuals, 3D Assets & Digital Experiences.</h1>
+            <p>Specializing in 3D modeling, texturing, rendering, and visual asset creation. Exploring the space between design and interaction.</p>
+            <div class="hero-btns">
+                <a href="#work" class="btn-primary">View Featured Work</a>
+                <a href="#contact" class="btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery Section -->
+    <section id="work" class="portfolio">
+        <h2>Featured Projects</h2>
+        <p class="subtitle">A selection of recent 3D models, renders, and graphic design projects.</p>
+        
+        <div class="grid">
+            <!-- Project 1 -->
+            <div class="card" onclick="openModal('3D Environment Design', 'Maya / Substance Painter', 'High-detail environment modeling with realistic texturing and lighting setup.')">
+                <div class="card-image-placeholder">3D Render 01</div>
+                <div class="card-info">
+                    <span class="tag">3D Modeling</span>
+                    <h3>Environment Environment Render</h3>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="card" onclick="openModal('Hard Surface Asset', 'Marvelous / Maya', 'Detailed hard surface prop modeling designed for game engine readiness.')">
+                <div class="card-image-placeholder">3D Prop 02</div>
+                <div class="card-info">
+                    <span class="tag">Asset Design</span>
+                    <h3>Hard Surface Prop</h3>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="card" onclick="openModal('Brand Identity & Motion', 'Photoshop / Illustrator', 'Comprehensive brand design including asset kits and promotional graphics.')">
+                <div class="card-image-placeholder">Graphic Design 03</div>
+                <div class="card-info">
+                    <span class="tag">Graphic Design</span>
+                    <h3>Visual Identity Kit</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Software Section -->
+    <section id="skills" class="skills">
+        <h2>Tools & Specializations</h2>
+        <div class="skills-grid">
+            <div class="skill-pill">Autodesk Maya</div>
+            <div class="skill-pill">Substance 3D Painter</div>
+            <div class="skill-pill">Marvelous Designer</div>
+            <div class="skill-pill">Adobe Photoshop</div>
+            <div class="skill-pill">Adobe Illustrator</div>
+            <div class="skill-pill">Video Editing</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-card">
+            <h2>About Me</h2>
+            <p>I build 3D environments, character assets, and high-impact graphic design work. Focused on clean topology, realistic texturing, and dynamic composition.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Let's Connect</h2>
+        <p>Interested in collaborating or hiring for freelance work? Send a message.</p>
+        <a href="mailto:your-email@example.com" class="btn-primary">Email Me Directly</a>
+    </section>
+
+    <!-- Project Preview Modal -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title">Project Title</h3>
+            <p id="modal-tools" class="modal-tools">Tools Used</p>
+            <p id="modal-desc">Detailed breakdown of the artwork...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
